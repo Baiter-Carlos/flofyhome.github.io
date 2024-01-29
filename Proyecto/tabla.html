@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="tabla.css">
+	<script src="https://kit.fontawesome.com/48d9c2e66a.js" crossorigin="anonymous"></script>
+	<link rel="shortcut icon" href="../../Logo/logo_small_icon_only.png">
+	<script	src="Inventario.js"></script>
+	<title>FLOFY HOME</title>
+</head>
+<body>
+<header>
+    <div class="container__header">
+        <div class="logo">
+           <img src="imagenes/logo_small.png">
+        </div>
+        <div class="menu">
+           <nav>
+           <ul>
+              <li><a href="Inicio.html">Inicio</a></li>
+              <li><a href="Productos.html">Productos</a></li>
+              <li><a href="Nosotros.html">Nosotros</a></li>
+              <li><a href="gestion_usuario.html">Administrador</a></li>
+              <li><a href="#">Cerrar Sesion</a></li>
+           </ul>
+        </nav>
+        </div>
+        <i class="fa-solid fa-bars" id="icon_menu"></i>
+     </div>
+	</header>
+	</header>
+<section>
+		<br>
+		<div>
+			<div class="container__user">
+				<i class="fa-solid fa-circle-user"></i>
+				<h3>Administrador</h3>
+			</div>
+			<div class="menu-izquierdo">
+				<ul>
+					<li><a href="gestion_usuario.html" >Gestión usuarios</a></li>
+					<li><a href="" class="Inventario">Inventario</a></li>
+					<li><a href="Compras.html">Ventas</a></li>
+				</ul>
+				<div class="Gestion">
+					<input type="search" class="buscador" placeholder="Buscar producto">
+					<a href="añadir.html"><button class="boton1">Añadir producto</button></a>
+					<button class="boton2" onclick="exportTableToExcel('TableInventario')">Reporte</button>
+					<table border="1" id="TableInventario">
+					<tr>
+					<th>Código producto</th><th>Nombre producto</th><th>Cantidad</th><th>Precio venta</th><th>Precio</th><th> Detalle</th><th>Acciones</th>
+					</tr>
+					<tr>
+					<td>0001</td><td>Chorizo</td><td>12</td><td>$5800</td><td>$5500</td><td>Zenu ternera 5 und</td><td><a href="Información Producto/Información Producto.html"><i class="fa fa-info-circle"></i></a></td>
+					</tr>
+					<tr>
+					<td>0002</td><td>Salchicha</td><td>11</td><td>$12300</td><td>$12000</td><td>Rica 14 und</td><td><a href="Información Producto/Información Producto.html"><i class="fa fa-info-circle"></i></a></td>
+					</tr>
+					<tr>
+					<td>0003</td><td>Bocadillo</td><td>13</td><td>$700</td><td>$400</td><td>Doña guayaba</td><td><a href="Información Producto/Información Producto.html"><i class="fa fa-info-circle"></i></a></td>
+					</tr>
+					<tr>
+					<td>0004</td><td>TodoRico</td><td>15</td><td>$2300</td><td>$2000</td><td>BBQ 150 gr</td><td><a href="Información Producto/Información Producto.html"><i class="fa fa-info-circle"></i></a></td>
+					</tr>
+					<tr>
+					<td>0005</td><td>Cereal</td><td>12</td><td>$3800</td><td>$3500</td><td>Fitness 220gr</td><td><a href="Información Producto/Información Producto.html"><i class="fa fa-info-circle"></i></a></td>
+					</tr>
+					<tr>
+					<td>0006</td><td>Atún</td><td>14</td><td>$2400</td><td>$2100</td><td>Agua 140 gr</td><td><a href="Información Producto/Información Producto.html"><i class="fa fa-info-circle"></i></a></td>
+					</tr>
+					<tr>
+					<td>0007</td><td>Harina Trigo</td><td>16</td><td>$2800</td><td>$2500</td><td>Tradicional 1000gr</td><td><a href="Información Producto/Información Producto.html"><i class="fa fa-info-circle"></i></a></td>
+					</tr>
+					<tr>
+					<td>0008</td><td>Carne Hambuguesa</td><td>12</td><td>$3300</td><td>$3000</td><td>Preasada Zenu 400gr</td><td><a href="Información Producto/Información Producto.html"><i class="fa fa-info-circle"></i></a></td>
+					</tr>
+					<tr>
+					<td>0009</td><td>Filete Pollo</td><td>12</td><td>$6300</td><td>$6000</td><td>Bucanero 650gr</td><td><a href="Información Producto/Información Producto.html"><i class="fa fa-info-circle"></i></a></td>
+					</tr>
+					<tr>
+					<td>0010</td><td>Filete de Tilapia</td><td>12</td><td>$6300</td><td>$6000</td><td>Bucanero 1.1kg</td><td><a href="Información Producto/Información Producto.html"><i class="fa fa-info-circle"></i></a></td>
+					</tr>
+					<tr>
+					<td>0011</td><td>Salsa Tomate</td><td>11</td><td>$2300</td><td>$2000</td><td>Fruco 400gr</td><td><a href="Información Producto/Información Producto.html"><i class="fa fa-info-circle"></i></a></td>
+					</tr>
+					<tr>
+					<td>0012</td><td>Huevos</td><td>13</td><td>$14800</td><td>$14500</td><td>Kikes rojos Tipo AA 30 und</td><td><a href="Información Producto/Información Producto.html"><i class="fa fa-info-circle"></i></a></td>
+					</tr>
+					<tr>
+					<td>0013</td><td>Queso</td><td>15</td><td>$4800</td><td>$4500</td><td>Mozzarella tajado 25 und 400gr</td><td><a href="Información Producto/Información Producto.html"><i class="fa fa-info-circle"></i></a></td>
+					<tr>
+					<td>0014</td><td>Queso</td><td>12</td><td>$5300</td><td>$5000</td><td>Finnese tajado 25 und 400gr</td><td><a href="Información Producto/Información Producto.html"><i class="fa fa-info-circle"></i></a></td>
+					</tr>
+					<tr>
+					<td>0015</td><td>Bon Yurt</td><td>14</td><td>$7100</td><td>$6800</td><td>Mini trolli 4 und 108gr</td><td><a href="Información Producto/Información Producto.html"><i class="fa fa-info-circle"></i></a></td>
+					</tr>
+					</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+	</div>
+<footer>
+		<div class="contenido-footer">
+
+			<ul class="socials">
+			    <li><a href="https://es-la.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+			    <li><a href="https://twitter.com/?lang=es"><i class="fa fa-twitter"></i></a></li>
+			    <li><a href="https://www.google.com.co/"><i class="fa fa-google"></i></a></li>
+			    <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+			    <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square"></i></a></li>
+		 	</ul>		
+			<div>
+				<br>
+				    <a href="">Acerca de</a>
+				    <br>
+				    <a href="">Contáctanos</a>
+			</div>
+			<div>
+		 		<p>&copy; 2022 Derechos reservados</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
